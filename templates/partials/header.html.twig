@@ -12,6 +12,9 @@
           {% if app.user %}
           
             <li>
+              <a href="{{path('app_home')}}">  </a>
+            </li>
+            <li>
               <a href="{{path('app_logout')}}">Déconnexion</a>
             </li>
          {% else %}
@@ -51,7 +54,7 @@
         <nav class="h__main-secondary col align__mid">
           <ul>
             <li class="search__wrap">
-              <a href="#" class="icon search__btn">
+              <a href="#" class="icon search__btn" title="mon compte" >
                 <i class="fa fa-fw fa-user" aria-hidden="true"></i>
               </a>
             </li>
