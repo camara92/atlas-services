@@ -33,4 +33,8 @@ class PrestatairesController extends AbstractController
             'prestation' => $form->createView(),
         ]);
     }
+
+    public function showPrestation(): Response {
+        
+    }
 }
