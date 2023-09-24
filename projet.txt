@@ -1,0 +1,15 @@
+1. Recherche de prestataires : Permettre aux utilisateurs de rechercher des prestataires disponibles en spécifiant des critères tels que la destination, les dates de séjour, le nombre d’utilisateurs, etc.
+2. Réservation et paiement en ligne : Permettre aux utilisateurs de réserver et de payer leur prestataire en ligne de manière sécurisée. Versement du paiement au prestataire une fois l’experience validée et notée des deux côtés
+3. Profils d'utilisateurs : Permettre aux utilisateurs de créer des profils, d'ajouter des informations personnelles, des photos et des évaluations. Des centres d’intérêts qui matcheront afin de classer les résultats de recherche
+4. Annonces : Permettre aux prestataires de créer des annonces détaillées pour leurs services, en fournissant des descriptions, des photos, des prix etc.
+5. Messagerie intégrée : Permettre aux utilisateurs d'interagir et de communiquer avec les prestataires par le biais d'une messagerie intégrée dans l’application.
+6. Système de notation et d'évaluation : Permettre aux utilisateurs de laisser des commentaires et des évaluations sur les prestataires et vice versa après la prestation. Seul cette évaluation débloque le paiement pour le prestataire, au delà de 7 jours si l’utilisateur ne note pas mais que le prestataire oui, le paiement est automatiquement émis
+7. Filtrage avancé : Permettre aux utilisateurs de filtrer les résultats de recherche en fonction de leurs préférences, tels que l’âge du prestataire, sa longévité dans l’activité, les services disponibles ect..
+8. Gestion des réservations : Permettre aux utilisateurs de gérer leurs réservations, de consulter l'historique des prestation passées, les réservations à venir, les annulations, etc.
+9. Notifications : Envoyer des notifications aux utilisateurs pour les informer des mises à jour importantes, des confirmations de réservation, des demandes de réservation, etc.
+10. Assistance client : Fournir un support client pour répondre aux questions, résoudre les problèmes et aider les utilisateurs tout au long du processus de réservation.
+11. Gestion des profils prestataire : Permettre aux prestataires de gérer leurs profils, de mettre à jour les informations, de gérer les disponibilités, de répondre aux demandes de réservation, etc.
+12. Intégration de cartes : Intégrer des cartes pour afficher les emplacements des prestataires
+13. Sécurité et vérification des utilisateurs : Mettre en place des mesures de sécurité et de vérification des utilisateurs pour assurer la fiabilité et la confiance au sein de la communauté.
+14. Fonctionnalité de liste de souhaits : Permettre aux utilisateurs de sauvegarder des prestataire dans une liste de souhaits pour une réservation ultérieure.
+15. Traduction automatique : Fournir une fonction de traduction automatique pour faciliter la communication entre les utilisateurs de différentes langues.
