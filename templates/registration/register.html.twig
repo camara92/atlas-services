@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<div class="container mt-5 border-light">
+    <h1>Merci de vous inscrire </h1>
+
+   
+{# 
+    {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.firstname) }}
+        {{ form_row(registrationForm.lastname) }}
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.password, {
+            label: 'Password'
+        }) }}
+        <button type="submit" class="btn">Register</button>
+    {{ form_end(registrationForm) }} #}
+
+    </div>
+
+    {# daouda  #}
+    <div class="form_wrapper">
+        <div class="form_container">
+          <div class="title_container">
+            <h2>Responsive Registration Form</h2>
+          </div>
+          <div class="row clearfix">
+            <div class="">
+            
+               {{ form_start(registrationForm) }}
+                <div class="input_field"> 
+                   {{ form_row(registrationForm.firstname) }}
+                </div>
+                <div class="input_field">
+                    {{ form_row(registrationForm.lastname) }}
+                </div>
+                <div class="row clearfix">
+                  <div class="col_half">
+                    <div class="input_field"> 
+                       {{ form_row(registrationForm.email) }}
+                    </div>
+                  </div>
+                  <div class="col_half">
+                    <div class="input_field"> 
+                      {{ form_row(registrationForm.password) }}
+                    </div>
+                  </div>
+                </div>
+                   
+               
+                        <button type="submit" class="btn">Register</button>
+              
+                  {{ form_end(registrationForm) }}
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="credit">Developed Atlas services <a href="http://www.designtheway.com" target="_blank"> CAMARA Daouda </a></p>
+
+{% endblock %}
