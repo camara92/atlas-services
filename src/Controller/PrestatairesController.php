@@ -27,8 +27,8 @@ class PrestatairesController extends AbstractController
            
 
          
+            return $this->redirectToRoute('app_home');
         }
-        return $this->redirectToRoute('app_home');
         return $this->render('prestataires/index.html.twig', [
             'prestation' => $form->createView(),
         ]);
