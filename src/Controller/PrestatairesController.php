@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Prestataires;
 use App\Form\PrestatairesType;
+use App\Repository\PrestatairesRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -33,8 +34,12 @@ class PrestatairesController extends AbstractController
             'prestation' => $form->createView(),
         ]);
     }
+    #[Route('/prestataires_show', name: 'app_prestataires_show')]
+    public function showPrestation(PrestatairesRepository $prestatairesRepository): Response {
 
-    public function showPrestation(): Response {
-        
+        // dd($prestatairesRepository->Libelle());
+        return $this->render('prestataires/show.html.twig', [
+            'prestations' => $prestatairesRepository->findAll(),
+        ]);
     }
 }

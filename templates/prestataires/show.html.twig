@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Afficher les prestations
+{% endblock %}
+
+{% block body %}
+{% for prestation in prestations %}
+    
+	<div class="card shadow-1 fx-row white">
+		<div class="d-flex vcenter fx-center p-4 bd-r-1 bd-r-solid bd-grey ">
+			<p> {{prestation.libelle }}</p>
+		</div>
+
+		<div class="d-flex fx-col fx-grow">
+			<div class="card-header"> prestations-contacts  </div>
+			<div class="card-content">
+				<p> {{prestation.activities }} </p>
+			</div>
+		</div>
+	</div>
+{% endfor %}
+
+{% endblock %}
