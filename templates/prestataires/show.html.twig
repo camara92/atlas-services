@@ -5,20 +5,48 @@
 {% endblock %}
 
 {% block body %}
-{% for prestation in prestations %}
-    
-	<div class="card shadow-1 fx-row white">
-		<div class="d-flex vcenter fx-center p-4 bd-r-1 bd-r-solid bd-grey ">
-			<p> {{prestation.libelle }}</p>
-		</div>
+	{% for prestation in prestations  %}
 
-		<div class="d-flex fx-col fx-grow">
-			<div class="card-header"> Prestations-contacts  </div>
-			<div class="card-content">
-				<p> {{prestation.activities }} </p>
+		<div class="card shadow-1 fx-row white">
+			<div class="d-flex vcenter fx-center p-4 bd-r-1 bd-r-solid bd-grey ">
+				<p>Nom du prestatire :
+					{{prestation.libelle }}</p>
+			</div>
+
+			<div class="d-flex fx-col fx-grow">
+				<div class="card-header">Date :
+					{{ prestation.createdat |date('d-m-Y')}}
+				</div>
+				<div class="card-content">
+					<p>Mes activités :
+						{{prestation.activities }}
+					</p>
+				<br>
+				
+					<p>Adresse :
+						{{prestation.adress }}
+					</p>
+				</div>
 			</div>
 		</div>
-	</div>
-{% endfor %}
+	{% endfor %}
 
+
+	<div class="text-center accordion-flush bg-white">
+		<h2>
+			Les prestataires
+		</h2>
+		<hr>
+
+		{% for prestadate in prestations_par_date %}
+			<div class="card flex">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item">
+						{{prestadate.libelle}}  - {{prestadate.createdat |date('d-m-Y')}}
+					</li>
+
+				</ul>
+			</div>
+		{% endfor %}
+	</div>
 {% endblock %}

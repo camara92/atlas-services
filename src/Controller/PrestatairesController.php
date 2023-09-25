@@ -37,9 +37,10 @@ class PrestatairesController extends AbstractController
     #[Route('/prestataires_show', name: 'app_prestataires_show')]
     public function showPrestation(PrestatairesRepository $prestatairesRepository): Response {
 
-        // dd($prestatairesRepository->Libelle());
+        
         return $this->render('prestataires/show.html.twig', [
             'prestations' => $prestatairesRepository->findAll(),
+            'prestations_par_date' => $prestatairesRepository->findBy(['active'=>true], ['createdat'=>'desc']),
         ]);
     }
 }
