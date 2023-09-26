@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class PrestatairesController extends AbstractController
 {
     #[Route('/prestataires', name: 'app_prestataires')]
-    public function register(Request $request, EntityManagerInterface $entityManager): Response
+    public function AddPrestations(Request $request, EntityManagerInterface $entityManager): Response
     {
         $prestataire = new Prestataires();
         $form = $this->createForm(PrestatairesType::class, $prestataire);

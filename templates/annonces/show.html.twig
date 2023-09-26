@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Afficher les annonces
+{% endblock %}
+
+{% block body %}
+{% for annonce in annonces  %}
+
+	<div class="card shadow-1 fx-row white">
+		<div class="d-flex vcenter fx-center p-4 bd-r-1 bd-r-solid bd-grey ">
+			<h4>Titre de l'annonce :
+				{{annonce.title }}</h4>
+		</div>
+
+		<div class="d-flex fx-col fx-grow">
+			<div class="card-content">
+				<p> Description  :
+					{{annonce.description }}
+				</p>
+				
+			</div>
+		</div>
+		<div class="d-flex fx-col fx-grow">
+
+			<p>Prix souhaité :
+				{{annonce.prix }}£
+			</p>
+		</div>
+		
+		<div class="d-flex fx-col fx-grow">
+			<div class="card-content">Date :
+				{{ annonce.createdat |date('d-m-Y')}}
+			</div>
+		</div>
+		<div class="d-flex fx-col fx-grow">
+			<div class="card-content">
+				<h5>
+					Origine de l'annonce :
+					{{ annonce.prestataire}}
+				</h5>
+			</div>
+		</div>
+	</div>
+</div><br>{% endfor %}{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AnnoncesController!{% endblock %}
+
+{% block body %}
+    {# {{form(annonces)}} #}
+    <div class="form_wrapper">
+		<div class="form_container">
+			<div class="title_container">
+				<h2>
+					Création des annonces 
+				</h2>
+			</div>
+			<div class="row clearfix">
+				<div class="">
+
+					{{ form_start(annonces) }}
+					<div class="input_field">
+						{{ form_row(annonces.title) }}
+					</div>
+					<div class="input_field">  
+						{{ form_row(annonces.description) }}
+					</div>
+					<div class="input_field">  
+						{{ form_row(annonces.photo) }}
+					</div>
+					<div class="row clearfix">
+						<div class="col_half">
+							<div class="input_field">
+								{{ form_row(annonces.prix) }}
+							</div>
+						</div>
+						{# <div class="col_half">
+							<div class="input_field">
+								{{ form_row(annonces.createdat | date ('d-m-Y') ) }}  
+                                date de création 
+							</div>
+						</div> #}
+					</div>
+					<div class="input_field">  
+						{{ form_row(annonces.prestataire) }}
+					</div>
+					{# <button type="submit" class="btn btn-success w-100">Enregistrer</button> #}
+                   
+					{{ form_end(annonces) }}
+
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
